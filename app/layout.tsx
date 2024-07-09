@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Hepta_Slab } from "next/font/google";
 import "./globals.css";
+import Provider from "./provider";
 
 const heptaslab = Hepta_Slab({
   subsets: ["latin"],
@@ -19,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={heptaslab.className}>{children}</body>
+      <body className={heptaslab.className}>
+        {" "}
+        <Provider>{children}</Provider>
+      </body>
     </html>
   );
 }
