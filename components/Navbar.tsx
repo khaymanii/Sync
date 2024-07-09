@@ -16,42 +16,38 @@ import {
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = ["Home", "Product", "Category", "About"];
+  const menuItems = ["Home", "Product", "Category", "About", "Login"];
 
   return (
-    <Navbar
-      className="bg-purple-500"
-      isBordered
-      onMenuOpenChange={setIsMenuOpen}
-    >
+    <Navbar className="bg-black" isBordered onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
+          className="sm:hidden text-customPurple"
         />
         <NavbarBrand>
-          <Image src="./images/logo.svg" alt="logo" width={150} height={150} />
+          <Image src="./images/logo.svg" alt="logo" width={50} height={50} />
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-10 " justify="center">
-        <NavbarItem isActive>
-          <Link className="text-white text-sm" href="#">
+        <NavbarItem>
+          <Link className="text-white text-xs" href="#">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-white text-sm" href="#" aria-current="page">
+          <Link className="text-white text-xs" href="#" aria-current="page">
             Product
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-white text-sm" href="#">
+          <Link className="text-white text-xs" href="#">
             Category
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-white text-sm" href="#">
+          <Link className="text-white text-xs" href="#">
             About
           </Link>
         </NavbarItem>
@@ -63,7 +59,8 @@ export default function App() {
             radius="full"
             variant="bordered"
             href="#"
-            className="text-white border-purple-900"
+            size="sm"
+            className="text-white border-customPurple text-xs px-6"
           >
             Login
           </Button>
@@ -73,17 +70,17 @@ export default function App() {
             as={Link}
             radius="full"
             href="#"
-            variant="flat"
-            className="bg-purple-900"
+            size="sm"
+            className="text-white bg-customPurple text-xs px-4"
           >
             Sign Up
           </Button>
         </NavbarItem>
       </NavbarContent>
-      <NavbarMenu>
+      <NavbarMenu className=" bg-customPurple">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link className="w-full text-gray-600 text-sm" href="#" size="lg">
+            <Link className="w-full text-white text-xs" href="#" size="lg">
               {item}
             </Link>
           </NavbarMenuItem>

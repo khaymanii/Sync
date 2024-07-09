@@ -10,10 +10,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        customPurple: "#9747FF",
+        customPurple1: "#324972",
+      },
+      background: {
+        "linear-gradient":
+          "linear-gradient(87.99deg, #BB86FC 42.9%, #4DC9B1 56.1%)",
       },
     },
   },
