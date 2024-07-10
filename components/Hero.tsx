@@ -9,7 +9,7 @@ export default function Hero() {
           Efficiency and Productivity <br /> with Our{" "}
           <span className="text-customPurple">SaaS</span> Solution
         </h1>
-        <p className="text-xs pb-8 tracking-wider">
+        <p className="text-xs pb-8 tracking-wider leading-relaxed">
           At Sync, we strive to grow with your business, allowing themes to add
           new projects <br /> and users effortlessly. Tools to ensure that the
           product can adapt to meet business enterprise
