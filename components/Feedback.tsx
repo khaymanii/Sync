@@ -22,7 +22,7 @@ export default function Feedback() {
         />
       </div>
       <div className="flex flex-col md:flex-row items-start justify-around text-center md:text-left">
-        <h1 className="text-3xl font-extrabold tracking-wider text-white leading-relaxed mb-8 md:mb-0">
+        <h1 className="text-3xl font-extrabold tracking-wider text-white leading-relaxed mb-8 md:mb-0 text-center">
           Get started with <br /> Our{" "}
           <span className="text-customPurple">SaaS</span>
           Solution

@@ -16,7 +16,7 @@ import {
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = ["Home", "Product", "Category", "About", "Login"];
+  const menuItems = ["Feature", "Pricing", "About Us", "Contact", "Login"];
 
   return (
     <Navbar className="bg-black" isBordered onMenuOpenChange={setIsMenuOpen}>
@@ -33,22 +33,22 @@ export default function App() {
       <NavbarContent className="hidden sm:flex gap-10 " justify="center">
         <NavbarItem>
           <Link className="text-white text-xs" href="#">
-            Home
+            Feature
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link className="text-white text-xs" href="#" aria-current="page">
-            Product
+            Pricing
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link className="text-white text-xs" href="#">
-            Category
+            About Us
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link className="text-white text-xs" href="#">
-            About
+            Contact
           </Link>
         </NavbarItem>
       </NavbarContent>
